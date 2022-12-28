@@ -1,0 +1,6 @@
+FROM golang:latest
+WORKDIR /build
+COPY . .
+RUN go get -d -v ./...
+RUN go install -v ./...
+CMD ["main"]
