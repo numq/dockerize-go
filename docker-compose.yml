@@ -1,8 +1,6 @@
 services:
-  #  service name
-  dockerized:
+  application:
     build: .
-    command: go run main/main.go
     depends_on:
       - redis
       - mongo
