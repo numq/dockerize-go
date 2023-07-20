@@ -1,10 +1,9 @@
-# *COPY & PASTE* Golang application dockerizing
+# Dockerize Go
 
-Working *alpine* based *multi-stage Docker configuration. Includes Dockerfile and docker-compose.yml
+Docker Multi-stage Build for Tiny Go Image Deployment.
 
-*[Multi-stage](https://docs.docker.com/build/building/multi-stage/) - *this is a way to reduce an image size creating an empty image and copying the binary file into it.*
-
-*Once again schematically:*
+*[Multi-stage](https://docs.docker.com/build/building/multi-stage/) - *this is a way to reduce an image size creating an
+empty image and copying the binary file into it.*
 
 <ul>
     <li>First stage</li>
@@ -22,6 +21,7 @@ Working *alpine* based *multi-stage Docker configuration. Includes Dockerfile an
 </ul>
 
 # Run:
+
 ```
 docker compose up [OPTIONS] [SERVICE...]
 ```
